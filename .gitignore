@@ -1,0 +1,4 @@
+.venv/
+.mcu-stubs/
+__pycache__/
+*.pyc

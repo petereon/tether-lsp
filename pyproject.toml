@@ -1,0 +1,21 @@
+[project]
+name = "tether-lsp"
+version = "0.1.0"
+description = "Meta language server for tether's mixed MicroPython/PC files"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pygls>=2.1.1",
+    "pyright>=1.1.411",
+    "tether-mcu",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = []
+
+[project.scripts]
+tether-lsp = "tether_lsp.server:main"
