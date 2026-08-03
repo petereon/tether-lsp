@@ -198,7 +198,7 @@ dependencies = [
 requires-dist = [
     { name = "pygls", specifier = ">=2.1.1" },
     { name = "pyright", specifier = ">=1.1.411" },
-    { name = "tether-mcu" },
+    { name = "tether-mcu", git = "https://github.com/petereon/tether?branch=main" },
 ]
 
 [package.metadata.requires-dev]
@@ -206,15 +206,11 @@ dev = []
 
 [[package]]
 name = "tether-mcu"
-version = "0.1.0"
-source = { registry = "https://pypi.org/simple" }
+version = "0.1.1"
+source = { git = "https://github.com/petereon/tether?branch=main#a9478a59daec5ffe4e02af24730dca1a1d60cf0c" }
 dependencies = [
     { name = "msgpack" },
     { name = "ruff" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/93/56/2ddacbbdf04bfde2ed7f9ba48ffc3f125ff6a1c99406efa256fed90d574b/tether_mcu-0.1.0.tar.gz", hash = "sha256:de1ffcaf22257dc06e601c48752dff589d61b35717ca1a5289c1e9e6dcacd7c4", size = 333215, upload-time = "2026-07-29T20:13:09.094Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/0c/13/c86ab81c07056613781be3c5db2284b57ee4344b534a1e0e165a97d16ae0/tether_mcu-0.1.0-py3-none-any.whl", hash = "sha256:bdc1689d4475d272dd2a4eda2f192e6941d6a128ea2b74d47524672b40291955", size = 96521, upload-time = "2026-07-29T20:13:07.659Z" },
 ]
 
 [[package]]

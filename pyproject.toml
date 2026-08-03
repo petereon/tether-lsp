@@ -14,6 +14,12 @@ dependencies = [
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
+# Tracks tether's main branch directly rather than PyPI - always the latest
+# commit, independent of whether tether's own release pipeline is currently
+# working (see the 2026-08-03 lockfile/version-bump breakage there).
+[tool.uv.sources]
+tether-mcu = { git = "https://github.com/petereon/tether", branch = "main" }
+
 [dependency-groups]
 dev = []
 
